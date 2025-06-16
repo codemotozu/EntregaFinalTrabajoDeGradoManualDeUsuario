@@ -27,15 +27,4 @@ Sistema de clasificación automática de residuos que utiliza visión artificial
 - **CUDA Toolkit:** 11.4 o superior (para GPU)
 - **Sistema Operativo:** Windows 10/11, Linux, macOS
 
-## 🚀 Instalación Paso a Paso
 
-### 1. Configurar Entorno Python
-```bash
-# Crear entorno virtual
-python -m venv wastecareai_env
-
-# Activar entorno (Windows)
-wastecareai_env\Scripts\activate
-
-# Activar entorno (Linux/macOS)
-source wastecareai_env/bin/activate
