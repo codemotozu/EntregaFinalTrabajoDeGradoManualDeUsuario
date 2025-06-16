@@ -1,15 +1,3 @@
-# from ultralytics import YOLO 
-# import cv2
-# # Fix the path by using raw string (add r before the string) or double backslashes
-# model = YOLO(r"C:\Users\rodri\Downloads\best.pt") 
-# # Alternative: model = YOLO("C:\\Users\\rodri\\Downloads\\best.pt")
-# model.predict(source="0", show=True, conf=0.5) # accepts all formats
-
-
-
-
-
-
 import time
 import torch
 import cv2
@@ -37,8 +25,7 @@ running = True
 def process_frames():
     global latest_results, processing, fps_display, inference_time_ms, running
     
-    model = YOLO(r"C:\Users\rodri\Downloads\bestModel09052025.pt")
-    # model = YOLO(r"C:\Users\rodri\Downloads\yolov11-seg (1).pt")
+    model = YOLO(r"C:\Users\rodri\Downloads\bestModel09052025.pt")  # copy paste tu path donde descargaste el modelo que se encuentra en el readme 
     model.to(device)
     
     fps_list = []
