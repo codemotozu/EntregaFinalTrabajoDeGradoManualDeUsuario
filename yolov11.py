@@ -25,7 +25,7 @@ running = True # Bandera que controla si el sistema sigue ejecutándose
 def process_frames(): # Define función que se ejecutará en un hilo separado
     global latest_results, processing, fps_display, inference_time_ms, running # Accede a variables globales
     
-    model = YOLO(r"C:\Users\rodri\Downloads\bestModel09052025.pt") # Copy-paste tu path donde descargaste el modelo que se encuentra en el readme 
+    model = YOLO(r"C:\Users\rodri\Downloads\bestModel09052025.pt") # ⚠️ IMPORTANTE: Copy-paste tu path donde descargaste el modelo que se encuentra en el readme 🔄 CAMBIAR ESTA RUTA
     model.to(device) # Mueve el modelo a GPU o CPU según disponibilidad
     
     fps_list = [] # Lista para calcular promedio de FPS
