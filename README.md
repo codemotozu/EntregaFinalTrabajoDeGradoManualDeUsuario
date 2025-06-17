@@ -1,4 +1,3 @@
-```bash
 # WasteCareAI - Sistema de Clasificación de Residuos mediante Visión Artificial
 
 Sistema de clasificación automática de residuos que utiliza visión artificial y aprendizaje profundo basado en YOLOv11 con segmentación de instancias para identificar 10 categorías diferentes de materiales reciclables en tiempo real.
@@ -47,7 +46,6 @@ Sistema de clasificación automática de residuos que utiliza visión artificial
 git clone https://github.com/codemotozu/EntregaFinalTrabajoDeGradoManualDeUsuario.git
 cd EntregaFinalTrabajoDeGradoManualDeUsuario
 ```
-
 ### Paso 2: Crear Entorno Virtual
 ```bash
 # Crear entorno virtual
