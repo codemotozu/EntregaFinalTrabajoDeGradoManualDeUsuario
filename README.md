@@ -63,10 +63,14 @@ source wastecareai_env/bin/activate
 # Instalar PyTorch con soporte CUDA
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
-# Instalar otras dependencias
+# Instalar dependencias de visión artificial y procesamiento
 pip install ultralytics
 pip install opencv-python
 pip install numpy
+
+# Dependencias adicionales (generalmente incluidas con Python)
+# time - Módulo estándar de Python (no requiere instalación)
+# threading - Módulo estándar de Python (no requiere instalación)
 ```
 
 ### Paso 4: Descargar Modelo Entrenado
@@ -141,6 +145,19 @@ cap = cv2.VideoCapture(0)  # 0, 1, 2, etc.
 - Limpiar lente de cámara
 - Ajustar umbral de confianza
 
+**Error de importación de módulos**
+```bash
+# Si hay error con OpenCV:
+pip uninstall opencv-python
+pip install opencv-python
+
+# Si hay error con NumPy:
+pip install --upgrade numpy
+
+# Si hay error con Ultralytics:
+pip install --upgrade ultralytics
+```
+
 ## 📁 Estructura del Proyecto
 ```
 EntregaFinalTrabajoDeGradoManualDeUsuario/
@@ -149,6 +166,15 @@ EntregaFinalTrabajoDeGradoManualDeUsuario/
 ├── bestModel09052025.pt       # Modelo entrenado (descargar por separado)
 └── requirements.txt           # Dependencias (opcional)
 ```
+
+## 📦 Dependencias del Sistema
+El código utiliza las siguientes librerías:
+- **time** - Manejo de tiempos y pausas (módulo estándar)
+- **torch** - PyTorch para operaciones de deep learning
+- **cv2** - OpenCV para captura y procesamiento de video
+- **threading** - Procesamiento en paralelo (módulo estándar)
+- **numpy** - Operaciones con arrays numéricos
+- **ultralytics** - Implementación de YOLO para detección de objetos
 
 ## 📊 Rendimiento por Hardware
 | Hardware | Resolución | FPS Procesamiento | Latencia |
@@ -168,5 +194,4 @@ Este proyecto fue desarrollado como trabajo de grado académico en el Politécni
 - **Video Demostración:** https://www.youtube.com/watch?v=uTHRAp4GBTs
 - **Modelo Entrenado:** https://huggingface.co/CAROCH/MODEL/tree/main
 - **Documentación YOLOv11:** https://docs.ultralytics.com/
-
 
