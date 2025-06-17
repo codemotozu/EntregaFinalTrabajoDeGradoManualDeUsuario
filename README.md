@@ -169,8 +169,4 @@ Este proyecto fue desarrollado como trabajo de grado académico en el Politécni
 - **Modelo Entrenado:** https://huggingface.co/CAROCH/MODEL/tree/main
 - **Documentación YOLOv11:** https://docs.ultralytics.com/
 
----
-**Desarrollado por:** Carolina Rodríguez Chacón  
-**Institución:** Politécnico Grancolombiano  
-**Año:** 2025
-```
+
